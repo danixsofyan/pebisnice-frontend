@@ -46,7 +46,7 @@ export function NavUser({
 
   const handleLogout = async () => {
     await fetch("/api/logout", { method: "POST" });
-    router.push("/auth/login");
+    router.push("/login");
   };
   return (
     <SidebarMenu>
